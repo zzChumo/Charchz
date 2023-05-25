@@ -15,8 +15,14 @@ linux /boot/vmlinuz-linux root=/dev/<设备名>
 initrd initramfs-linux.img
 boot
 ```
+    
 *在执行这些命令前，您必须保证您的分区没有严重损伤，否则可能会出现因为无法挂载内存盘而导致的Kernel Panic。*    
     
-随后，Grub会加载Charchz的内核及内存盘。您需要在TTY中以用户root登录系统。root的默认密码为arch。
-
-执行tmoe命令，在nmtui中连接你的无线网络并退出tmoe。之后，执行pacman -Syyu && pacman -S grub以安装Grub，最后通过正常流程将Grub添加到自己的硬盘中即可。
+随后，Grub会加载Charchz的内核及内存盘。您需要在TTY中以用户root登录系统。root的默认密码为arch。在成功登陆以后，由于没有设定文件系统默认挂载状态，根目录将自动设为制度。这时，您需要使用`lsblk`查看Charchz安装分区的UUID，并在`/etc/fstab`中添加以下内容：    
+    
+```shell
+UUID=<UUID> / ext4 defaults,noatime 0 1
+```
+    
+现在，Charchz已经成功安装到了您的电脑上。您可以使用`passwd`来修改您的root用户密码。同时，Charchz还内置了一个名为`arch`的sudo用户，您可以使用它来完成后续的操作。    
+[← TODO](todo.md) | [系统配置指南 →](system.md)
