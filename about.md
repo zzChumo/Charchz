@@ -10,5 +10,4 @@
 - 适合中级Linux用户使用~~话说哪个正经用户会用Charchz这种难以维护的发行版~~   
 - 较为完善的Wiki支持，且Arch Wiki适用本系统       
      
-[← 简介](index.md)    
-[TODO →](todo.md)
+[← 简介](index.md) | [TODO →](todo.md)
