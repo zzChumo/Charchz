@@ -4,6 +4,7 @@
 - [x] 添加Aria下载器    
 - [x] 预装xfce4    
 - [ ] 集成KernelCJK    
+- [x] 内置无线网卡驱动    
 - [x] 解决基本驱动问题    
     
 [← 特征](about.md) | [安装 →](install.md)
