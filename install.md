@@ -4,7 +4,7 @@
     
 首先，您需要在一个已有的操作系统上新建一个大小10GB以上的硬盘分区并格式化为ext4文件系统。对于Windows，可以使用`DiskGenius`免费版和Windows磁盘工具；对于Linux，可以使用`mkfs.ext4`和`GParted`。    
     
-接下来，下载Charchz的镜像文件并在__任意Linux发行版__或__安装盘__上使用`sudo tar -zxvf charchz-rootfs.tar.gz`将镜像解压至新分区的根目录。不管在解压过程中出现何种类型的报错，您都应该在网络畅通的情况下重新下载镜像并解压。    
+接下来，下载Charchz的镜像文件并在__任意Linux发行版__或在其安装盘上使用`sudo tar -zxvf charchz-rootfs.tar.gz`将镜像解压至新分区的根目录。不管在解压过程中出现何种类型的报错，您都应该在网络畅通的情况下重新下载镜像并解压。    
     
 最后，使用其他系统的Grub命令行执行以下命令：
 
