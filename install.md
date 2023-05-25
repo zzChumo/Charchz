@@ -24,5 +24,6 @@ boot
 UUID=<UUID> / ext4 defaults,noatime 0 1
 ```
     
-现在，Charchz已经成功安装到了您的电脑上。您可以使用`passwd`来修改您的root用户密码。同时，Charchz还内置了一个名为`arch`的sudo用户，您可以使用它来完成后续的操作。    
+现在，Charchz已经成功安装到了您的电脑上。您可以使用`passwd`来修改您的root用户密码。同时，Charchz还内置了一个名为`arch`的sudo用户，您可以使用它来完成后续的操作。     
+    
 [← TODO](todo.md) | [系统配置指南 →](system.md)
