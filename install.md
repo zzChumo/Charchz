@@ -18,7 +18,7 @@ boot
     
 *在执行这些命令前，您必须保证您的分区没有严重损伤，否则可能会出现因为无法挂载内存盘而导致的Kernel Panic。*    
     
-随后，Grub会加载Charchz的内核及内存盘。您需要在TTY中以用户root登录系统。root的默认密码为arch。在成功登陆以后，由于没有设定文件系统默认挂载状态，根目录将自动设为制度。这时，您需要使用`lsblk`查看Charchz安装分区的UUID，并在`/etc/fstab`中添加以下内容：    
+随后，Grub会加载Charchz的内核及内存盘。您需要在TTY中以用户root登录系统。root的默认密码为arch。在成功登陆以后，由于没有设定文件系统默认挂载状态，根目录将自动设为制度。这时，您需要执行`rootrw`临时挂载根目录为读写，使用`lsblk`查看Charchz安装分区的UUID，并在`/etc/fstab`中添加以下内容：    
     
 ```shell
 UUID=<UUID> / ext4 defaults,noatime 0 1
