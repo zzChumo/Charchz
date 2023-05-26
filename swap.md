@@ -16,4 +16,4 @@ UUID=<UUID> none swap defaults 0 0
     
 如果您想要立即启用您的Swap，您只需要执行`swapon /dev/<分区名称>`即可。     
     
-[← 使用Google Chrome进行互联网浏览](sandbox.md)
+[← 使用Google Chrome进行互联网浏览](sandbox.md) | [全损音质？能用就行 →](alsa.md)
