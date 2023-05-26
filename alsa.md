@@ -18,7 +18,7 @@ pacman -S pavucontrol pavucontrol-qt
 pacman -S xfce4-pulseaudio-plugin
 ```
     
-现在您已经成功安装了两个音频服务！~~您的电脑变垃圾场指日可待！~~现在为了防止音响性能不足真的变成全损音质，我们还需要调整`/usr/share/alsa/alsa.conf`内的`defaults.pcm.dmix.rate`值。该值视音响及声卡性能（最大采样率）而定，一般情况下设定为`44100`即可。    
+现在您已经成功安装了两个音频服务！~~您的电脑变垃圾场指日可待~~！现在为了防止音响性能不足真的变成全损音质，我们还需要调整`/usr/share/alsa/alsa.conf`内的`defaults.pcm.dmix.rate`值。该值视音响及声卡性能（最大采样率）而定，一般情况下设定为`44100`即可。    
     
 在更改配置以后，在TTY中执行`pulseaudio --start`和`amixer sset Master unmute`，最后通过`startxfce4`启动桌面环境。这时您已经可以通过内置的Google Chrome听歌了。    
     
