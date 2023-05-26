@@ -8,5 +8,6 @@
 - [在您的Charchz上使用AppImage](app.md)
 - [使用Google Chrome进行互联网浏览](sandbox.md)
 - [Swap：从入土到再也不用管](swap.md)    
+- [全损音质？能用就行](alsa.md)
     
 [← 安装](install.md) | [Grub的安装与命令行下的手动引导 →](grub.md)
