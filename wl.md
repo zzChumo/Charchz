@@ -16,7 +16,7 @@ pacman -S pciutils
 然后安装无线网卡驱动并重启：    
     
 ``` shell
-pacman -S broadband-wl
+pacman -S broadcom-wl
 reboot
 ```
     
