@@ -21,6 +21,8 @@ kernel /boot/vmlinuz-linux root=UUID=<系统分区UUID>
 # 要加载的内存盘
 initrd /boot/initramfs-linux.img
 ```
+  
+当然，你也可以执行`grub-mkconfig -o /boot/grub/grub.cfg`。  
     
 如果您~~非常的懒以至于懒得复制粘贴~~想要保证系统的简洁和最小化或在公共场所装13，则可以在Grub命令行中通过以下命令来手动引导内核：    
     
