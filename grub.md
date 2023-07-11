@@ -5,24 +5,7 @@ Grub是一个Linux下的系统引导工具，您可以使用它来引导您的Ch
     
 首先，您需要在系统中挂载您的EFI分区到指定目录上，然后执行`grub-install /dev/<硬盘名称> --target=x86_64-efi --efi-directory=<EFI挂载目录>`来安装Grub到您的硬盘上。如果您使用传统的BIOS启动方式则不需要挂载EFI分区，直接执行`grub-install /dev/<硬盘名称> --target=i386-pc`即可。    
     
-接下来，您需要创建`/boot/grub/grub.conf`以建立Grub的启动菜单。您需要将以下内容添加进您的`grub.conf`中：    
-    
-``` shell
-# 默认的启动项 0指排在第一个的启动项
-default=0
-# 设置超时（单位为秒）
-timeout=10
-# 启动项的名称
-title Charchz x86_64
-# 定义根目录所在的分区
-root (<硬盘名称>,<分区名称>)
-# 要加载的内核 此处的root可以使用类似/dev/sda的形式 但为了保证系统的可携带性我们在此使用UUID
-kernel /boot/vmlinuz-linux root=UUID=<系统分区UUID>
-# 要加载的内存盘
-initrd /boot/initramfs-linux.img
-```
-  
-当然，你也可以执行`grub-mkconfig -o /boot/grub/grub.cfg`。  
+接下来，您需要创建`/boot/grub/grub.conf`以建立Grub的启动菜单。您需要执行`grub-mkconfig -o /boot/grub/grub.cfg`以创建grub.cfg。  
     
 如果您~~非常的懒以至于懒得复制粘贴~~想要保证系统的简洁和最小化或在公共场所装13，则可以在Grub命令行中通过以下命令来手动引导内核：    
     
