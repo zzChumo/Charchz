@@ -8,6 +8,6 @@
 使用Charchz的pacman添加`xfce4-screenshooter`和`xfce4-screensaver`，然后右击Dock栏并选择“面板首选项”，在“项目”中添加截屏快捷方式到您的Dock栏上。    
     
 ## 其他
-软件源中提供了一个名为`xfce4-goodies`的软件组，您可以使用`pacman -S xfce4-goodies`来选择组内的插件并安装。但是并不是每个组内的插件都非常有用，因此我们不建议您安装整个组。    
+软件源中提供了一个名为`xfce4-goodies`的软件组，您可以使用`pacman -S xfce4-goodies`来选择组内的插件并安装。    
     
 [← 无线网卡的使用](wl.md) | [中文输入法的安装与配置 →](fcitx.md)
