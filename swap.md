@@ -3,7 +3,7 @@
     
 要添加Swap，你首先需要通过`pacman -S gparted`获取`GParted`。这是一个非常好用的磁盘管理工具，比fdisk更加友好，也更加安全。    
     
-然后打开您刚刚安装的GParted，新建一个硬盘分区并选择文件系统为`limux-swap`，之后提交修改。    
+然后打开您刚刚安装的GParted，新建一个硬盘分区并选择文件系统为`linux-swap`，之后提交修改。    
     
 *注意：Swap会消耗您的硬盘寿命！请创建不超过4GiB的Swap分区！*     
     
